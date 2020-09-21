@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+                                             android:layout_height="match_parent">
+
+    <ImageView
+            android:layout_width="0dp"
+            android:layout_height="150dp" tools:srcCompat="@drawable/local"
+            android:id="@+id/imageView" android:layout_marginTop="24dp"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="9dp" android:layout_marginRight="9dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp" android:scaleType="fitCenter"/>
+    <android.support.design.widget.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp" android:layout_marginTop="24dp"
+            app:layout_constraintTop_toBottomOf="@+id/imageView" app:layout_constraintEnd_toStartOf="@+id/searchButton"
+            android:layout_marginEnd="8dp" android:layout_marginRight="8dp" android:id="@+id/searchInputLayout">
+
+        <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Search" android:id="@+id/searchInputField"
+                android:textAppearance="@style/TextAppearance.AppCompat"/>
+    </android.support.design.widget.TextInputLayout>
+    <Button
+            android:text="Search"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:id="@+id/searchButton" android:layout_marginTop="24dp"
+            app:layout_constraintTop_toBottomOf="@+id/imageView" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp" android:layout_marginRight="8dp"
+            android:textAppearance="@style/TextAppearance.AppCompat"/>
+    <Button
+            android:text="Artists"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/artistsButton" android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/searchInputLayout" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="8dp" android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp" android:layout_marginRight="8dp"
+            android:textAppearance="@style/TextAppearance.AppCompat"/>
+    <Button
+            android:text="Albums"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/albumsButton" android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/artistsButton" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="8dp" android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp" android:layout_marginRight="8dp"
+            android:textAppearance="@style/TextAppearance.AppCompat"/>
+    <Button
+            android:text="Songs"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/songsButton" android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/albumsButton" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="8dp" android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp" android:layout_marginRight="8dp"
+            android:textAppearance="@style/TextAppearance.AppCompat"/>
+    <Button
+            android:text="Playlists"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/playlistsButton" android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/songsButton" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="8dp" android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp" android:layout_marginRight="8dp"
+            android:textAppearance="@style/TextAppearance.AppCompat" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintVertical_bias="0.0"/>
+</android.support.constraint.ConstraintLayout>

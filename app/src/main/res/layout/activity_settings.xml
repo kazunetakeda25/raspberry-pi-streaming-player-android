@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+                                             android:layout_height="match_parent">
+    <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp" tools:srcCompat="@drawable/player"
+            android:id="@+id/playerSetupImage"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="8dp" android:layout_marginStart="8dp" android:layout_marginTop="24dp"
+            app:layout_constraintTop_toTopOf="parent" android:scaleType="centerInside"/>
+    <TextView
+            android:text="Player Setup"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/playerSetupTitleText" android:layout_marginTop="24dp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            app:layout_constraintStart_toEndOf="@+id/playerSetupImage" android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp" android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/playerSetupSettingButton" android:layout_marginRight="8dp"/>
+    <TextView
+            android:text="Raspberry Pi Device Settings"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/playerSetupCaptionText"
+            android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+            app:layout_constraintTop_toBottomOf="@+id/playerSetupTitleText"
+            app:layout_constraintStart_toEndOf="@+id/playerSetupImage" android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="4dp" android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/playerSetupSettingButton" android:layout_marginRight="8dp"/>
+    <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp" tools:srcCompat="@drawable/spotify"
+            android:id="@+id/spotifySettingImage"
+            android:layout_marginTop="24dp"
+            app:layout_constraintTop_toBottomOf="@+id/playerSetupImage"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp" android:scaleType="fitCenter"/>
+    <TextView
+            android:text="Spotify"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/spotifySettingTitleText"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            app:layout_constraintStart_toEndOf="@+id/spotifySettingImage"
+            android:layout_marginLeft="8dp" android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            app:layout_constraintTop_toBottomOf="@+id/playerSetupImage" android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/spotifySettingButton" android:layout_marginRight="8dp"/>
+    <TextView
+            android:text="Spotify Connection Settings"
+            android:layout_width="0dp"
+            android:layout_height="15dp"
+            android:id="@+id/spotifySettingCaptionText"
+            android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+            app:layout_constraintStart_toEndOf="@+id/spotifySettingImage"
+            android:layout_marginLeft="8dp" android:layout_marginStart="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/spotifySettingTitleText"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="8dp" app:layout_constraintEnd_toStartOf="@+id/spotifySettingButton"
+            android:layout_marginRight="8dp"/>
+    <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp" tools:srcCompat="@drawable/tunein"
+            android:id="@+id/tuneinSettingImage"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="8dp" android:layout_marginStart="8dp" android:layout_marginTop="24dp"
+            app:layout_constraintTop_toBottomOf="@+id/spotifySettingImage" android:scaleType="centerCrop"/>
+    <TextView
+            android:text="TuneIn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tuneinSettingTitleText"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            app:layout_constraintStart_toEndOf="@+id/tuneinSettingImage"
+            android:layout_marginLeft="8dp" android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            app:layout_constraintTop_toBottomOf="@+id/spotifySettingImage" android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/tuneinSettingButton" android:layout_marginRight="8dp"/>
+    <TextView
+            android:text="TuneIn Connection Settings"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tuneinSettingCaptionText"
+            android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+            app:layout_constraintStart_toEndOf="@+id/tuneinSettingImage"
+            android:layout_marginLeft="8dp" android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            app:layout_constraintTop_toBottomOf="@+id/tuneinSettingTitleText"
+            android:layout_marginEnd="8dp" app:layout_constraintEnd_toStartOf="@+id/tuneinSettingButton"
+            android:layout_marginRight="8dp"/>
+    <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp" tools:srcCompat="@drawable/local"
+            android:id="@+id/localSettingImage"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="8dp" android:layout_marginStart="8dp" android:layout_marginTop="24dp"
+            app:layout_constraintTop_toBottomOf="@+id/tuneinSettingImage" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintVertical_bias="0.0"
+            android:scaleType="fitCenter"/>
+    <TextView
+            android:text="Local Storage Network"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/localSettingTitleText"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:layout_marginTop="24dp"
+            app:layout_constraintTop_toBottomOf="@+id/tuneinSettingImage"
+            app:layout_constraintStart_toEndOf="@+id/localSettingImage" android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginEnd="8dp" app:layout_constraintEnd_toStartOf="@+id/localSettingButton"
+            android:layout_marginRight="8dp"/>
+    <TextView
+            android:text="Local Storage Network Connection Settings"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/localSettingCaptionText"
+            android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+            app:layout_constraintStart_toEndOf="@+id/localSettingImage"
+            android:layout_marginLeft="8dp" android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            app:layout_constraintTop_toBottomOf="@+id/localSettingTitleText"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintVertical_bias="0.0"
+            android:layout_marginEnd="8dp" app:layout_constraintEnd_toStartOf="@+id/localSettingButton"
+            android:layout_marginRight="8dp"/>
+    <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp" app:srcCompat="@drawable/settings"
+            android:id="@+id/playerSetupSettingButton" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toTopOf="@+id/playerSetupTitleText" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/playerSetupCaptionText" android:scaleType="fitCenter"/>
+    <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp" app:srcCompat="@drawable/settings"
+            android:id="@+id/spotifySettingButton"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp" android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp" app:layout_constraintTop_toTopOf="@+id/spotifySettingTitleText"
+            android:layout_marginBottom="8dp" app:layout_constraintBottom_toBottomOf="@+id/spotifySettingCaptionText"
+            android:scaleType="fitCenter"/>
+    <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp" app:srcCompat="@drawable/settings"
+            android:id="@+id/tuneinSettingButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp" android:layout_marginRight="8dp" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toTopOf="@+id/tuneinSettingTitleText" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/tuneinSettingCaptionText" android:scaleType="fitCenter"/>
+    <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp" app:srcCompat="@drawable/settings"
+            android:id="@+id/localSettingButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp" android:layout_marginRight="8dp" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toTopOf="@+id/localSettingTitleText" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/localSettingCaptionText" android:scaleType="fitCenter"/>
+
+</android.support.constraint.ConstraintLayout>
